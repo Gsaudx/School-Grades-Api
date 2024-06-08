@@ -1,148 +1,32 @@
 {
     "1": {
         "id": 1,
-        "name": "Guilherme Saud",
+        "name": "Student 1",
         "grades": {
-            "matematica": 8.0,
-            "ciencias": 9.0
+            "math": 6.0,
+            "portuguese": 5.5
         }
     },
     "2": {
         "id": 2,
-        "name": "Eduardo Saud",
+        "name": "Student 2",
         "grades": {
-            "matematica": 8.0,
-            "ciencias": 9.0
+            "portuguese": 1.0
         }
     },
     "3": {
         "id": 3,
-        "name": "Juliana Saud",
+        "name": "Student 3",
         "grades": {
-            "portugues": 8.0
+            "portuguese": 10.0
         }
     },
     "4": {
         "id": 4,
-        "name": "Juliana Saud",
+        "name": "Student 4",
         "grades": {
-            "portugues": 8.0
-        }
-    },
-    "5": {
-        "id": 5,
-        "name": "Teste Saud Favaro",
-        "grades": {
-            "portugues": 8.0
-        }
-    },
-    "6": {
-        "id": 6,
-        "name": "Isaque Precioso Saud",
-        "grades": {
-            "matematica": 8.0,
-            "ciencias": 9.0,
-            "Linguagem de Programacao": 10.0
-        }
-    },
-    "7": {
-        "id": 7,
-        "name": "Isaque Precioso Saud",
-        "grades": {
-            "portugues": 1.0,
-            "ciencias": 9.0,
-            "Linguagem de Programacao": 10.0
-        }
-    },
-    "8": {
-        "id": 8,
-        "name": "Isaque Precioso Saud",
-        "grades": {
-            "portugues": 0.5,
-            "ciencias": 9.0,
-            "Linguagem de Programacao": 10.0
-        }
-    },
-    "9": {
-        "id": 9,
-        "name": "Henrique Saud",
-        "grades": {
-            "portugues": 2.0,
-            "ciencias": 9.0,
-            "Linguagem de Programacao": 10.0
-        }
-    },
-    "10": {
-        "id": 10,
-        "name": "Zebra",
-        "grades": {
-            "portugues": 2.3,
-            "ciencias": 9.5,
-            "Linguagem de Programacao": 10.1
-        }
-    },
-    "11": {
-        "id": 11,
-        "name": "Zebra 2",
-        "grades": {
-            "portugues": 2.3,
-            "ciencias": 9.5,
-            "Linguagem de Programacao": 10.1
-        }
-    },
-    "12": {
-        "id": 12,
-        "name": "Zebra 2",
-        "grades": {
-            "portugues": 11.0,
-            "ciencias": 9.5,
-            "Linguagem de Programacao": 10.1
-        }
-    },
-    "13": {
-        "id": 13,
-        "name": "Zebra 2",
-        "grades": {
-            "portugues": 11.0,
-            "ciencias": 9.5,
-            "Linguagem de Programacao": 10.1
-        }
-    },
-    "14": {
-        "id": 14,
-        "name": "Zebra 2",
-        "grades": {
-            "portugues": 11.0,
-            "ciencias": 9.5,
-            "Linguagem de Programacao": 10.1
-        }
-    },
-    "15": {
-        "id": 15,
-        "name": "Zebra 9",
-        "grades": {
-            "portugues": 10.0,
-            "ciencias": 9.5,
-            "Linguagem de Programacao": 10.0
-        }
-    },
-    "16": {
-        "id": 16,
-        "name": "Zebra 10",
-        "grades": {}
-    },
-    "17": {
-        "id": 17,
-        "name": "ZZ",
-        "grades": {
-            "informatica para negocios": 5.0
-        }
-    },
-    "18": {
-        "id": 18,
-        "name": "ZZ 2",
-        "grades": {
-            "informatica para negocios": 7.3
+            "info": 3.3,
+            "math": 5.0
         }
     }
 }

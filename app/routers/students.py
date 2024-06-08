@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from app.models import Student
-from app.crud import create_student, get_student, get_students_by_subject, calculate_statistics, students_db
+from app.crud import create_student, get_student, get_students_by_subject, calculate_statistics, students_below_average, students_db
 from app.schemas import StudentCreate, Student as StudentSchema
 
 router = APIRouter()
@@ -44,13 +44,24 @@ def read_grades(subject: str):
         )
     return student
 
-@router.get("/grades/average/{subject}")
+@router.get("/grades/statistics/{subject}")
 def read_average(subject: str):
     average = calculate_statistics(subject)
-    
+
     if not average:
         raise HTTPException(
             status_code = 404,
             detail = "There are no data for that subject in the database"
         )
     return average
+
+@router.get("/grades/below_average/")
+def read_average():
+    students = students_below_average() #Threshold grade is 6 by default
+
+    if not students:
+        raise HTTPException(
+            status_code = 404,
+            detail = "There are no students with grades below 6 in the database"
+        )
+    return students
