@@ -130,5 +130,19 @@
         "id": 16,
         "name": "Zebra 10",
         "grades": {}
+    },
+    "17": {
+        "id": 17,
+        "name": "ZZ",
+        "grades": {
+            "informatica para negocios": 5.0
+        }
+    },
+    "18": {
+        "id": 18,
+        "name": "ZZ 2",
+        "grades": {
+            "informatica para negocios": 7.3
+        }
     }
 }

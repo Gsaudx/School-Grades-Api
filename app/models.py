@@ -12,3 +12,8 @@ class Student(BaseModel):
 
     def dict(self, **kwargs):
         return super().dict(**kwargs)
+
+class Statistics(BaseModel):
+    average: float
+    median: float
+    standard_deviation: float
