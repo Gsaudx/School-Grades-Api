@@ -2,7 +2,7 @@
 A API foi desenvolvida como trabalho final para a matéria de Linguagem de programação do Dr. Henrique Dezani
 API developed as a final test from Dr. Henrique Dezani's Programming Language subject, from Fatec Rio Preto
 
-##Setup
+## Setup
 1. Clone the repository
 ```bash
 git clone https://github.com/your-user/API-Notas-Escolares.git
