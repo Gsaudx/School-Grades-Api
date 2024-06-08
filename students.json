@@ -35,5 +35,14 @@
         "grades": {
             "portugues": 8.0
         }
+    },
+    "6": {
+        "id": 6,
+        "name": "Isaque Precioso Saud",
+        "grades": {
+            "matematica": 8.0,
+            "ciencias": 9.0,
+            "Linguagem de Programacao": 10.0
+        }
     }
 }
