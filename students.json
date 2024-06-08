@@ -44,5 +44,50 @@
             "ciencias": 9.0,
             "Linguagem de Programacao": 10.0
         }
+    },
+    "7": {
+        "id": 7,
+        "name": "Isaque Precioso Saud",
+        "grades": {
+            "portugues": 1.0,
+            "ciencias": 9.0,
+            "Linguagem de Programacao": 10.0
+        }
+    },
+    "8": {
+        "id": 8,
+        "name": "Isaque Precioso Saud",
+        "grades": {
+            "portugues": 0.5,
+            "ciencias": 9.0,
+            "Linguagem de Programacao": 10.0
+        }
+    },
+    "9": {
+        "id": 9,
+        "name": "Henrique Saud",
+        "grades": {
+            "portugues": 2.0,
+            "ciencias": 9.0,
+            "Linguagem de Programacao": 10.0
+        }
+    },
+    "10": {
+        "id": 10,
+        "name": "Zebra",
+        "grades": {
+            "portugues": 2.3,
+            "ciencias": 9.5,
+            "Linguagem de Programacao": 10.1
+        }
+    },
+    "11": {
+        "id": 11,
+        "name": "Zebra 2",
+        "grades": {
+            "portugues": 2.33,
+            "ciencias": 9.53,
+            "Linguagem de Programacao": 10.11
+        }
     }
 }
