@@ -13,6 +13,14 @@ def add_student(student: StudentCreate):
         name = student.name,
         grades = student.grades
     )
+
+    for materia, nota in student.grades.items():
+        if nota < 0 or nota > 10:
+            raise HTTPException(
+                status_code = 422,
+                detail = "Grades must range from 0 to 10"
+            )
+
     create_student(student_id, new_student)
     return new_student
 
