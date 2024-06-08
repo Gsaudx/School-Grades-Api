@@ -1,6 +1,5 @@
 # API Restful for school grades management
-A API foi desenvolvida como trabalho final para a matéria de Linguagem de programação do Dr. Henrique Dezani
-API developed as a final test from Dr. Henrique Dezani's Programming Language subject, from Fatec Rio Preto
+The API was developed as a final test from Dr. Henrique Dezani's Programming Language subject, from Fatec Rio Preto
 
 ## Setup
 1. Clone the repository
