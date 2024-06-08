@@ -22,3 +22,11 @@ pip install -r requirements.txt
 ```bash
 uvicorn app.main:app --reload
 ```
+
+## Endpoints
+You can also check the endpoiints by going to the automatically generated Swagger Ui in your_server/docs
+
+|  HTTP Method  |   Endpoint    |  HTTP Method |  
+| ------------- | ------------- | ------------ |
+|               |               |              |
+|               |               |              |
