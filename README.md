@@ -1,4 +1,4 @@
-# API Restful for school grades management
+# Restful API for school grades management
 The API was developed as a final test from Dr. Henrique Dezani's Programming Language subject, from Fatec Rio Preto
 
 ## Setup
