@@ -4,7 +4,7 @@ The API was developed as a final test from Dr. Henrique Dezani's Programming Lan
 ## Setup
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-user/API-Notas-Escolares.git
+git clone https://github.com/Gsaudx/API-Notas-Escolares.git
 ```
 And then go into your folder you cloned the repo
 ```bash
@@ -24,7 +24,7 @@ uvicorn app.main:app --reload
 ```
 
 ## Endpoints
-You can also check the endpoiints by going to the automatically generated Swagger Ui in your_server/docs
+You can also check the endpoints by going to the automatically generated Swagger Ui in your_server/docs
 
 |  HTTP Method  |   Endpoint    |  HTTP Method |  
 | ------------- | ------------- | ------------ |
