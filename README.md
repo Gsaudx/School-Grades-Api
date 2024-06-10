@@ -26,7 +26,10 @@ uvicorn app.main:app --reload
 ## Endpoints
 You can also check the endpoints by going to the automatically generated Swagger Ui in your_server/docs
 
-|  HTTP Method  |   Endpoint    |  HTTP Method |  
-| ------------- | ------------- | ------------ |
-|               |               |              |
-|               |               |              |
+|  HTTP Method  |            Endpoint           |                 Description                |  
+| ------------- | ----------------------------- | ------------------------------------------ |
+|     POST      |           /students/          |           Add a student to the db          |
+|     GET       |    /students/{student_id}/    |             Get a student by ID            |
+|     GET       |      /grades/{subject}/       |        Get grades per subject name         |
+|     GET       |  /grades/statistics{subject}/ |       Get statistics per subject name      |
+|     GET       |      /grades/below_average/   | Get students with grades below average (6) |
