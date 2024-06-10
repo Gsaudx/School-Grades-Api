@@ -1,5 +1,3 @@
-#This file hold function to load and save datas into students.json file. This which is updated whenever the server/api is shutted down
-
 import json
 from typing import Dict
 from app.models import Student
