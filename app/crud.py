@@ -27,7 +27,7 @@ def calculate_statistics(subject: str) -> Statistics:
     median_score = round(median(grades), 1)
     std_dev = round(stdev(grades), 1)
 
-    return Statistics(average=average, median=median_score, standard_deviation=std_dev)
+    return Statistics(average = average, median = median_score, standard_deviation = std_dev)
 
 def students_below_average(threshold_grade: float = 6):
     students_below_average = []

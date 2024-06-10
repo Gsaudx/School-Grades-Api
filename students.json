@@ -28,5 +28,13 @@
             "info": 3.3,
             "math": 5.0
         }
+    },
+    "5": {
+        "id": 5,
+        "name": "Postman Test",
+        "grades": {
+            "math": 10.0,
+            "science": 5.5
+        }
     }
 }
