@@ -14,7 +14,7 @@ def get_student(student_id: int):
 def get_students_by_subject(subject: str):
     return sorted(
         [(student.name, student.grades[subject]) for student in students_db.values() if subject in student.grades],
-        key=lambda x: x[1]
+        key=lambda x: x[1] #Order by 2nd index (student grade)
     )
 
 def calculate_statistics(subject: str) -> Statistics:
@@ -31,6 +31,7 @@ def calculate_statistics(subject: str) -> Statistics:
 
 def students_below_average(threshold_grade: float = 6):
     students_below_average = []
+
     for student in students_db.values():
         low_grade_subjects = {subject: grade for subject, grade in student.grades.items() if grade < threshold_grade}
         if low_grade_subjects:

@@ -35,7 +35,7 @@ def read_student(student_id: int):
     return student
 
 @router.get("/grades/{subject}")
-def read_grades(subject: str):
+def subject_grades(subject: str):
     student = get_students_by_subject(subject)
     if not student:
         raise HTTPException(
@@ -45,7 +45,7 @@ def read_grades(subject: str):
     return student
 
 @router.get("/grades/statistics/{subject}")
-def read_average(subject: str):
+def subject_statistics(subject: str):
     average = calculate_statistics(subject)
 
     if not average:
@@ -56,7 +56,7 @@ def read_average(subject: str):
     return average
 
 @router.get("/grades/below_average/")
-def read_average():
+def below_average():
     students = students_below_average() #Threshold grade is 6 by default
 
     if not students:

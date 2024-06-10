@@ -36,5 +36,14 @@
             "math": 10.0,
             "science": 5.5
         }
+    },
+    "6": {
+        "id": 6,
+        "name": "Student 5",
+        "grades": {
+            "math": 0.0,
+            "portuguese": 0.9,
+            "info": 10.0
+        }
     }
 }
