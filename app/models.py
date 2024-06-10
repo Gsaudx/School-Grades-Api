@@ -1,4 +1,4 @@
-from pydantic import BaseModel, validator
+from pydantic import BaseModel, field_validator
 from typing import Dict
 
 class Student(BaseModel):
@@ -6,7 +6,7 @@ class Student(BaseModel):
     name: str
     grades: Dict[str, float]
 
-    @validator('grades', pre=True)
+    @field_validator('grades', mode='before')
     def round_grades(cls, grades):
         return {subject: round(grade, 1) for subject, grade in grades.items()}
 
