@@ -59,6 +59,42 @@ In this one we:
   <li> Store the data into the file with json.dump() function </li>
 </ul>
 
+### app/main.py
+Here is where our API is awaken. Here we define a decorator used to create an async context manager, used to define a block of code which is executed before and after some context.
+The lifespan function is the conetext manager in this application, it defines the life cycle of our API, it must receive a FastApi object as argument. 
+Then, we have the startup event, which updates the students_db variable (the one storing every student in the students.json file) using the function `load_data()`, explained some lines ago.
+Right after that, we have the `yield` keyword, which has the paper of temporarily transfer the control to the code that is using the context manager (our API).
+And finally, when our API is shutdown, the code below `yield` is executed. In other words, save_data() receives student_db and updates the students.json file.
+
+Outside the function we can see two more lines:
+
+This one creates our API life cyle using the context manager we declared before
+```
+app = FastAPI(lifespan = lifespan)
+```
+
+And this one passes the routes defined inside the `students.py` file, which is the next and last one of the guide
+```
+app.include_router(students.router)
+```
+
+### app/routers/student.py
+Now that we already understand about how the API essencially works, we can finally discuss about the routers.
+In FastApi, a router is a away to group related routes, which is basically a URL (endpoint) in our API that is associated to a function. Going a little more deep, when an endpoint is accesed, the associated function is executed to handle that request.
+
+We can identify a route and the HTTP method necessary to access it by identifying the decorators `@router`, followed by the HTTP method: ```.post```:
+
+```
+@router.post("/students/", response_model = Student, summary = "Add a student to the database")
+```
+This decorator specifically receives three parameters:
+<ul>
+    <li> The first one defines the endpoint </li>
+    <li> The second defines the response model of the request. In this one we must return an object of the type Student, defined in the `model.py` file </li>
+    <li> And the last one simply gives a short description to it, this which can be checked in the automatically generated swagger documentation (pic below) </li>
+</ul>
+![image](https://github.com/Gsaudx/School-Grades-Api/assets/62403672/87b6d824-e52c-4413-966e-9dca0e5259fa)
+
 ## Setup
 ### 1. Clone the repository
 ```bash
