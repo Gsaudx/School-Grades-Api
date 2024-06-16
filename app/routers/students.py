@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from app.models import Student
 from app.crud import create_student, get_student, get_students_by_subject, calculate_statistics, students_below_average, students_db
-from app.schemas import StudentCreate, Student as StudentSchema
+from app.schemas import StudentCreate
 
 router = APIRouter()
 
@@ -31,7 +31,7 @@ We also validate the given grades to ensure that none of them are less than 0 or
 
 If all verifications pass, we run the create_student function, passing the created student object as an argument.
 """
-@router.post("/students/", response_model = StudentSchema, summary = "Add a student to the database")
+@router.post("/students/", response_model = Student, summary = "Add a student to the database")
 def add_student(student: StudentCreate):
     student_id = max(students_db.keys()) + 1 if students_db else 1 
     new_student = Student(
@@ -62,7 +62,7 @@ If a valid ID is provided, the response will be a JSON object in the following f
   "grades": Dict[str, float]
 }
 """
-@router.get("/students/{student_id}", response_model = StudentSchema, summary = "Get a student by ID")
+@router.get("/students/{student_id}", response_model = Student, summary = "Get a student by ID")
 def read_student(student_id: int):
     student = get_student(student_id)
     if not student:
@@ -76,7 +76,7 @@ def read_student(student_id: int):
 The /grades/{subject} endpoint expects to receive an existing subject from the database to return the corresponding grades.
 Providing an invalid subject will return a "There are no students with that subject in the database" error, along with a 404 HTTP status code.
 
-If there are grades for the given subject, the response will be a list containing the student name followed by their grade:
+If there are grades for the given subject, the response will be a list containing the student name followed by their grade ordered from the lowest to the higest:
 
 [
     [
@@ -115,7 +115,7 @@ def subject_statistics(subject: str):
     if not statistics:
         raise HTTPException(
             status_code = 404,
-            detail = "There are no data for that subject in the database, so no statistics."
+            detail = "There are not enough data for that subject in the database, so no statistics can be calculated."
         )
     return statistics
 

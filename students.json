@@ -53,5 +53,27 @@
             "lp1": 10.0,
             "lp2": 3.0
         }
+    },
+    "8": {
+        "id": 8,
+        "name": "guilherme",
+        "grades": {
+            "lp1": 9.0,
+            "lp2": 10.0
+        }
+    },
+    "9": {
+        "id": 9,
+        "name": "guilherme 2",
+        "grades": {
+            "lp1": 10.0
+        }
+    },
+    "10": {
+        "id": 10,
+        "name": "guilherme 2",
+        "grades": {
+            "lp1": 9.2
+        }
     }
 }

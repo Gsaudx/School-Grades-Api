@@ -29,7 +29,11 @@ def calculate_statistics(subject: str) -> Statistics:
     median_score = round(median(grades), 1)
     std_dev = round(stdev(grades), 1)
 
-    return Statistics(average = average, median = median_score, standard_deviation = std_dev)
+    return Statistics(
+        average = average, 
+        median = median_score, 
+        standard_deviation = std_dev
+    )
 
 def students_below_average(threshold_grade: float = 6):
     students_below_average = []
@@ -37,6 +41,11 @@ def students_below_average(threshold_grade: float = 6):
     for student in students_db.values():
         low_grade_subjects = {subject: grade for subject, grade in student.grades.items() if grade < threshold_grade}
         if low_grade_subjects:
-            student_with_low_grades = Student(id=student.id, name=student.name, grades=low_grade_subjects)
+            student_with_low_grades = Student(
+                id = student.id, 
+                name = student.name,
+                grades = low_grade_subjects
+            )
             students_below_average.append(student_with_low_grades)
+
     return students_below_average
