@@ -22,6 +22,8 @@ def calculate_statistics(subject: str) -> Statistics:
 
     if not grades:
         return
+    elif len(grades) == 1:
+        return
 
     average = round(mean(grades), 1)
     median_score = round(median(grades), 1)

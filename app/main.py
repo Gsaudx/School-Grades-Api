@@ -6,11 +6,11 @@ from app.crud import students_db
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Startup event
+    # Evento ao ligar o servidor
     global students_db
     students_db.update(load_data())
     yield
-    # Shutdown event
+    # Evento ao desligar o servidor (função para salvar novos estudantes no students.json)
     save_data(students_db)
 
 app = FastAPI(lifespan=lifespan)
