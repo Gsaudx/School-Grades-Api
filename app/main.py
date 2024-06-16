@@ -13,6 +13,6 @@ async def lifespan(app: FastAPI):
     # Evento ao desligar o servidor (função para salvar novos estudantes no students.json)
     save_data(students_db)
 
-app = FastAPI(lifespan=lifespan)
+app = FastAPI(lifespan = lifespan)
 
 app.include_router(students.router)
