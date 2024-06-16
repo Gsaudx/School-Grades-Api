@@ -45,5 +45,13 @@
             "portuguese": 0.9,
             "info": 10.0
         }
+    },
+    "7": {
+        "id": 7,
+        "name": "dezani",
+        "grades": {
+            "lp1": 10.0,
+            "lp2": 3.0
+        }
     }
 }
