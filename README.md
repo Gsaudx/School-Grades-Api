@@ -1,5 +1,7 @@
 # Restful API for school grades management
-Welcome! This API was developed by Guilherme Saud Favaro and Isaque Precioso de Andrade as a final test for Dr. Henrique Dezani's Programming Language subject, from Fatec Rio Preto
+Welcome! This API was developed by <b>Guilherme Saud Favaro and Isaque Precioso de Andrade</b> as a final test for Dr. Henrique Dezani's Programming Language subject, from Fatec Rio Preto
+
+<hr>
 
 ## File structure
 The project was developed not using only a single file (main.py), as usual for smaller designs. Instead, we decided to split it into some files. This is the current project's structure:
