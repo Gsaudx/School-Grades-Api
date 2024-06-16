@@ -1,7 +1,7 @@
 # Restful API for school grades management
 Welcome! This API was developed by Guilherme Saud Favaro and Isaque Precioso de Andrade as a final test for Dr. Henrique Dezani's Programming Language subject, from Fatec Rio Preto
 
-# File structure?
+## File structure
 The project was developed not using only a single file (main.py), as usual for smaller designs. Instead, we decided to split it into some files. This is the current project's structure:
 ```
 ├── app
@@ -16,7 +16,7 @@ The project was developed not using only a single file (main.py), as usual for s
 └── README.md
 └── students.json
 ```
-# How do each one of those files work?
+## How do each one of those files work?
 ### app/models.py
 It's important to start with the data modeling we're using. In this API, we decided to model every data we use as input or output. That basically mean every operation we do in the database returns one of the models inside this file. Models in this file are objects, basically representations of the data we want to receive/return. For example, to return the statistics of a subject, we look for the given one in the respective endpoint and then we return the specific Statistic object which represents the metrics.
 
