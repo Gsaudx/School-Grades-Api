@@ -1,7 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from app.models import Student
+from app.models import Student, StudentCreate
 from app.crud import create_student, get_student, get_students_by_subject, calculate_statistics, students_below_average, students_db
-from app.schemas import StudentCreate
 
 router = APIRouter()
 
