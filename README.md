@@ -95,7 +95,7 @@ This decorator specifically receives three parameters:
     <li> The second parameter defines the response model of the request. In this case, we must return an object of type Student, defined in the models.py file. </li>
     <li> The third parameter gives a short description of the endpoint, which can be checked in the automatically generated Swagger documentation (see the image below). </li>
 </ul>
-[image](https://github.com/Gsaudx/School-Grades-Api/assets/62403672/87b6d824-e52c-4413-966e-9dca0e5259fa)
+<img src="https://github.com/Gsaudx/School-Grades-Api/assets/62403672/87b6d824-e52c-4413-966e-9dca0e5259fa">
 
 ## Setup
 ### 1. Clone the repository
