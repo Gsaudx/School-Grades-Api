@@ -1,4 +1,4 @@
-# [English documentation](guides/guide_en.txt) | [Documentação em português](guides/guide_ptbr.txt)
+# [English documentation](guides/guide_en.md) | [Documentação em português](guides/guide_ptbr.md)
 
 <hr>
 
