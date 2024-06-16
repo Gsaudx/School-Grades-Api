@@ -3,6 +3,41 @@ Welcome! This API was developed by <b>Guilherme Saud Favaro and Isaque Precioso 
 
 <hr>
 
+## Setup
+### 1. Clone the repository
+```bash
+git clone https://github.com/Gsaudx/API-Notas-Escolares.git
+```
+Then go into the folder where you cloned the repo:
+```bash
+cd API-Notas-Escolares
+```
+
+Or clone it using GitHub Desktop.
+
+### 2. Install the dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the application
+```bash
+uvicorn app.main:app --reload
+```
+
+## Endpoints
+You can also check the endpoints by going to the automatically generated Swagger UI at your_server/docs.
+
+|  HTTP Method  |            Endpoint           |                 Description                |  
+| ------------- | ----------------------------- | ------------------------------------------ |
+|     POST      |           /students/          |           Add a student to the db          |
+|     GET       |    /students/{student_id}/    |             Get a student by ID            |
+|     GET       |      /grades/{subject}/       |        Get grades per subject name         |
+|     GET       |  /grades/statistics{subject}/ |       Get statistics per subject name      |
+|     GET       |      /grades/below_average/   | Get students with grades below average (6) |
+
+<hr>
+
 ## File structure
 The project is not developed using a single file (main.py) as is usual for smaller designs. Instead, we decided to split it into multiple files. This is the current project structure:
 ```
@@ -96,36 +131,3 @@ This decorator specifically receives three parameters:
     <li> The third parameter gives a short description of the endpoint, which can be checked in the automatically generated Swagger documentation (see the image below). </li>
 </ul>
 <img src="https://github.com/Gsaudx/School-Grades-Api/assets/62403672/87b6d824-e52c-4413-966e-9dca0e5259fa">
-
-## Setup
-### 1. Clone the repository
-```bash
-git clone https://github.com/Gsaudx/API-Notas-Escolares.git
-```
-Then go into the folder where you cloned the repo:
-```bash
-cd API-Notas-Escolares
-```
-
-Or clone it using GitHub Desktop.
-
-### 2. Install the dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Run the application
-```bash
-uvicorn app.main:app --reload
-```
-
-## Endpoints
-You can also check the endpoints by going to the automatically generated Swagger UI at your_server/docs.
-
-|  HTTP Method  |            Endpoint           |                 Description                |  
-| ------------- | ----------------------------- | ------------------------------------------ |
-|     POST      |           /students/          |           Add a student to the db          |
-|     GET       |    /students/{student_id}/    |             Get a student by ID            |
-|     GET       |      /grades/{subject}/       |        Get grades per subject name         |
-|     GET       |  /grades/statistics{subject}/ |       Get statistics per subject name      |
-|     GET       |      /grades/below_average/   | Get students with grades below average (6) |
