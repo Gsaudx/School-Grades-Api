@@ -30,6 +30,7 @@ Você também pode verificar os endpoints acessando a interface Swagger gerada a
 |     GET       |      /grades/{subject}/       |        Retorna as notas por nome da disciplina         |
 |     GET       |  /grades/statistics{subject}/ |       Retorna as estatísticas por nome da disciplina      |
 |     GET       |      /grades/below_average/   | Retorna os alunos com notas abaixo do limite (6) |
+|     DELETE       |      /students/remove/no_grades/   | Apaga todos os estudantes que não possuem nenhuma nota do banco de dados |
 
 <hr>
 
