@@ -1,6 +1,6 @@
 # Fatec API
 
-Welcome to the school grades API, a project developed for Doctor Henrique Dezani from FATEC Rio Preto
+Welcome to the school grades API, a project developed for Doctor Henrique Dezani from FATEC Rio Preto by <b> Guilherme Saud Favaro </b> and <b> Isaque Precioso de Andrade </b>
 
 ## Documentation
 <a href="guides/guide_en.md"> English </a> 
