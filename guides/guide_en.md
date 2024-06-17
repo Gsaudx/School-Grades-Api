@@ -10,7 +10,7 @@ cd API-Notas-Escolares
 
 Or clone it using GitHub Desktop.
 
-### 2. Install the dependencies
+### 2. Create a virtual environment and install the dependencies
 ```bash
 pip install -r requirements.txt
 ```
