@@ -83,5 +83,17 @@
             "lp1": 9.0,
             "lp2": 9.2
         }
+    },
+    "13": {
+        "id": 13,
+        "name": "zzz",
+        "grades": {
+            "math": 10.0
+        }
+    },
+    "14": {
+        "id": 14,
+        "name": "Student with no grade",
+        "grades": {}
     }
 }

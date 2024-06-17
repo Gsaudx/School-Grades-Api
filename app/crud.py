@@ -49,3 +49,17 @@ def students_below_average(threshold_grade: float = 6):
             students_below_average.append(student_with_low_grades)
 
     return students_below_average
+
+def remove_students_with_no_grades():
+    students_with_no_grades = []
+    unmutable_students_dic = students_db.copy()
+
+    for student_id, student in unmutable_students_dic.items():
+        for inner_student_id, grades in student:
+            if not grades:
+                students_db.pop(student_id)
+                students_with_no_grades.append(student_id)
+
+    return students_with_no_grades
+
+

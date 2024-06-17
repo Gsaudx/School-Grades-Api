@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from app.models import Student, StudentCreate
-from app.crud import create_student, get_student, get_students_by_subject, calculate_statistics, students_below_average, students_db
+from app.crud import create_student, get_student, get_students_by_subject, calculate_statistics, students_below_average, students_db, remove_students_with_no_grades
+from typing import Dict
 
 router = APIRouter()
 
@@ -145,3 +146,27 @@ def below_average():
             detail = "There are no students with grades below 6 in the database"
         )
     return students
+
+"""
+The /students/remove/no_grades endpoint does not expect any arguments.
+It removes every student that has not grades in the system. 
+
+If every student has at least one grade, an error is returned along with a 404 HTTP status code.
+
+However, if there is at least one student without any grade, he'll be removed and a list with his ID is going to be returned:
+
+[
+    int
+]
+"""
+@router.delete("/students/remove/no_grades", summary = "Deletes every student with no grades")
+async def remove_students_no_grades():
+    removed_students = remove_students_with_no_grades()
+    
+    if not removed_students:
+        raise HTTPException(
+            status_code = 404,
+            detail = "There are no students without grades. Any student has been removed from the database"
+        )
+
+    return removed_students
