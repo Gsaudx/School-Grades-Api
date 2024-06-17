@@ -130,3 +130,12 @@ Este decorator especificamente recebe três parâmetros:
     <li> O terceiro parâmetro fornece uma breve descrição do endpoint, que pode ser verificada na documentação Swagger gerada automaticamente (veja a imagem abaixo). </li>
 </ul>
 <img src="https://github.com/Gsaudx/School-Grades-Api/assets/62403672/87b6d824-e52c-4413-966e-9dca0e5259fa">
+
+<hr>
+
+# Obrigado por ler!
+## Por:
+<ul>
+    <li> Guilherme Saud Favaro (eu) </li>
+    <li> Isaque Precioso de Andrade </li>
+</ul>
