@@ -21,7 +21,7 @@ uvicorn app.main:app --reload
 ```
 
 ## Endpoints
-You can also check the endpoints by going to the automatically generated Swagger UI at your_server/docs.
+You can also check the endpoints by going to the automatically generated Swagger UI at your_server/docs. We also recommend that you test the API there.
 
 |  HTTP Method  |            Endpoint           |                 Description                |  
 | ------------- | ----------------------------- | ------------------------------------------ |
