@@ -21,7 +21,7 @@ uvicorn app.main:app --reload
 ```
 
 ## Endpoints/Rotas
-Você também pode verificar os endpoints acessando a interface Swagger gerada automaticamente em seu_servidor/docs.
+Você também pode verificar os endpoints acessando a interface Swagger gerada automaticamente em seu_servidor/docs. Inclusive recomendamos que você teste a API por lá.
 
 |  Método HTTP  |            Endpoint           |                 Descrição                  |  
 | ------------- | ----------------------------- | ------------------------------------------  |
