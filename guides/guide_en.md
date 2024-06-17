@@ -54,7 +54,7 @@ The project is not developed using a single file (main.py) as is usual for small
 ```
 ## How does each file work?
 ### app/models.py
-It's important to start with the data modeling we're using. In this API, we decided to model every data we use as input or output. This means that every operation we do in the database returns one of the models inside this file. Models in this file are objects, basically representations of the data we want to receive/return. For example, to return the statistics of a subject, we look for the given one in the respective endpoint and then return the specific Statistic object which represents the metrics.
+It's important to start with how the things work in this project. In this API, we decided to model the data we use as input and output. This means that every request that requires a value is validated before really being passed to the database. These models are inside the `models.py` file. Models in this file are classes, basically representations of the data we want to receive/return. For example, to return the statistics of a subject, we look for the given one in the respective endpoint and then return the Statistic object which represents the metrics.
 
 ### app/crud.py
 This file represents our repository (if we were using the MVC design pattern). It's full of functions, each one called by a specific endpoint and having its own functionalities. In each function, we run some basic validations. For example, when creating a student, we always check if the input given by the API consumer is of the Student model type by simply requiring the second argument to be of type Student:
