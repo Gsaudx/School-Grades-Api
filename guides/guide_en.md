@@ -44,6 +44,9 @@ The project is not developed using a single file (main.py) as is usual for small
 │   └── database.py
 │   └── main.py
 │   └── models.py
+├── guides
+│   ├── guide_en.md
+│   ├── guide_ptbr.md
 ├── .gitignore
 ├── requirements.txt 
 └── README.md
