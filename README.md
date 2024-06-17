@@ -39,5 +39,5 @@ You can also check the endpoints by going to the automatically generated Swagger
 |     GET       |      /grades/{subject}/       |        Get grades per subject name         |
 |     GET       |  /grades/statistics{subject}/ |       Get statistics per subject name      |
 |     GET       |      /grades/below_average/   | Get students with grades below average (6) |
-|     DELETE       |      /students/remove/no_grades/   | Remove every student that does not have any grade in the database |
+|     DELETE       |      /students/remove/no_grades/   | Remove every student that does not have any grade from the database |
 
